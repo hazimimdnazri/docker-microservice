@@ -6,7 +6,8 @@ Docker container or containerization is an alternative for virtualization. You c
 
 ## How do I use it?
 
-- Make sure you already install docker and docker-compose.
+- Make sure you already install `docker` and `docker-compose`.
+- Create another coopy of the `.env.example` file and rename it to `.env`.  
 - Run: 
     ```
     docker-compose up --build
@@ -16,3 +17,5 @@ Docker container or containerization is an alternative for virtualization. You c
     docker-compose up -d
     ```
     for detached mode.
+
+- The application will be serving on your port 3000.
