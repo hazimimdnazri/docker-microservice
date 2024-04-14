@@ -3,5 +3,5 @@ import routes from './routes.js';
 
 const app = express();
 
-app.listen(process.env.PORT || 4000, () => console.log(`API is running on port ${process.env.PORT}` || 4000))
+app.listen(process.env.PORT, () => console.log(`API is running on port ${process.env.PORT}`))
 app.use('/', routes)
