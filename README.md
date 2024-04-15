@@ -19,3 +19,7 @@ Docker container or containerization is an alternative for virtualization. You c
     for detached mode.
 
 - The application will be serving on your port 3000.
+
+## Tasks URL ##
+- For task 2, the URL will be `localhost:3000/cart/api/v1.0/fetch`
+- For task 3, the URL will be `localhost:3000/dynamicimage/api/v1.0/generate`
