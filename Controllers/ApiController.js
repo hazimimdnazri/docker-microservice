@@ -42,8 +42,8 @@ const generateApi = async (req, res) => {
         const canvas = createCanvas(canvasWidth, canvasHeight);
         const ctx = canvas.getContext('2d');
 
-        const titleHeight = 30; // Assuming 30px for the title font size
-        const descriptionHeight = 20; // Assuming 20px for the description font size
+        const titleHeight = 30;
+        const descriptionHeight = 20;
         const totalContentHeight = titleHeight + descriptionHeight;
 
         const spacingA = (canvasHeight - totalContentHeight) / 2;
@@ -71,10 +71,8 @@ const generateApi = async (req, res) => {
 
         ctx.fillText(description, descriptionX, descriptionY);
 
-        // Convert canvas to jpeg buffer
         const buffer = canvas.toBuffer('image/jpeg');
 
-        // Send response with the image
         res.writeHead(200, {
             'Content-Type': 'image/jpeg',
             'Content-Length': buffer.length
